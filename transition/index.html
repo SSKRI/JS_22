@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Переход в CSS3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 40px 30px;
+        border: 1px solid #333;
+        background-color: #ccc;
+
+        transition-property: background-color; /*width, height, border-color*/
+        transition-duration: 12s, 13s, 13s, 23s;
+        transition-timing-function: cubic-bezier(0.5, 0.6, 0.24, 0.18);
+        /*transition: background-color 3s ease-in-out 500ms;*/
+        /*transition: 500ms background-color 3s ease-in-out;--  два последних не одно и то же!!!, второе не правильно записано - последовательность*/
+      }
+      div:hover {
+        background-color: red; /*переход делается по всем 4 свойствам, только 12сек у фона, у остальных быстро*/
+        width: 120px;
+        height: 120px;
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

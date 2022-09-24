@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Трансформации в CSS3</title>
+    <style>
+      div {
+        background-color: #ccc;
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+        padding: 40px 10px;
+        box-sizing: border-box;
+        border: 1px solid #333;
+        display: inline-block;
+      }
+      .scale1 {
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div class="scale1">scaleX(-1)</div>
+    <div></div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Трансформации в CSS3</title>
+    <style>
+      div {
+        background-color: #ccc;
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+        padding: 40px 10px;
+
+        box-sizing: border-box;
+        border: 1px solid #333;
+        display: inline-block;
+      }
+      .translated {
+        transform: translate(50px, 30px) skew(30deg, 10deg) scale(1.5)
+          rotate(90deg);
+        background-color: red;
+      }
+      .translated2 {
+        transform: rotate(90deg) translate(50px, 30px) scale(1.5)
+          skew(30deg, 10deg);
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div class="translated">dd</div>
+    <!--если ничего не писать внутри этого дива, то смещения вниз второго блока не будет-->
+    <div class="translated2"></div>
+  </body>
+</html>
