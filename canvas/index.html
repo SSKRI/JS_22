@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas в HTML5</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="350"
+      height="200"
+      style="
+        background-color: rgb(205, 195, 235);
+        border: 4px solid rgb(229, 14, 14);
+      "
+    >
+      Ваш браузер не поддерживает Canvas
+    </canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas"),
+        context = canvas.getContext("2d");
+
+      context.strokeStyle = "black"; /*сначала цвет, потом рисуем*/
+      context.fillStyle = "rgb(93, 14, 229)";
+      context.lineWidth = 6.5;
+      context.setLineDash([22, 15, 1]);
+
+      context.strokeRect(50, 40, 100, 100);
+      context.fillRect(200, 40, 100, 100);
+      context.strokeRect(200, 40, 100, 100);
+      // context.clearRect(200, 40, 40, 40);
+    </script>
+  </body>
+</html>
