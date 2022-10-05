@@ -1,0 +1,23 @@
+.box1 {
+  width: 600px;
+  height: 200px;
+  background-color: red;
+}
+.box1-inner {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+.box2 {
+  width: 300px;
+  height: 400px;
+  background-color: blue;
+}
+.box2-inner {
+  width: 100px;
+  height: 250px;
+  background-color: grey;
+}
+.box-border {
+  height: 50px;
+}
