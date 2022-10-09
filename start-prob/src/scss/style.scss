@@ -1,0 +1,35 @@
+.test {
+  text-align: center;
+}
+.menu {
+  float: right;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.description {
+  color: red;
+  &:hover {
+    color: green;
+  }
+}
+.tools {
+  &-description {
+    text-align: left;
+  }
+
+  &.item {
+    float: left;
+  }
+  &.item2 {
+    float: left;
+  }
+}
